@@ -1,0 +1,875 @@
+@import "variables";
+// @import url('https://fonts.googleapis.com/css?family=Lobster');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+// * {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+// }
+
+// html {
+//   background-color: white;
+//   scroll-behavior: smooth
+// }
+
+
+// header {
+//   height: 13vh;
+
+
+// }
+
+// .container {
+//   max-width: 1024px;
+//   width: 100%;
+//   margin: 0 auto;
+
+//   @media #{$tablet} {
+//     width: 90%;
+//   }
+//   @media #{$desktop} {
+//     width: 80%;
+//   }
+// }
+
+// body {
+//   color: $secondaryColor;
+
+// }
+
+// .shop__now a:hover {
+//   color: goldenrod;
+// }
+
+// .navigation {
+//   height: 16vh;
+//   width: 100%;
+// }
+
+
+// a {
+//   color: $mainColor;
+//   text-decoration: none;
+
+// }
+
+// a:hover {
+//   color: #444;
+
+// }
+
+// .menu__container {
+//   background: #fff;
+//   width: 100%;
+//   //height: 76px;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   border-top: 10px solid $mainColor;
+//   border-bottom: 4px solid $mainColor;
+//   z-index: 100;
+//   background: url("/assets/images/paper_fibers/paper_fibers.png");
+//   font-weight: bold;
+// }
+
+// .menu {
+//   //float: right;
+//   padding: 20px;
+//   background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+//   color: $mainColor;
+//   font-size: 1.5em;
+
+// }
+
+// .menu-icon {
+//   display: none;
+
+//   .fa-bars {
+//     font-size: 38px;
+//   }
+
+// }
+
+// a:hover.menu-icon {
+//   border-radius: 4px 4px 0 0;
+//   color: #444;
+
+// }
+
+// ul {
+//   list-style: none;
+// }
+
+// li {
+//   display: inline-block;
+//   float: left;
+//   padding: 10px
+// }
+
+
+// @media only screen and (max-width: 640px) {
+//   .menu-icon {
+//     display: inline-block;
+//   }
+
+//   .menu ul, .menu:active ul {
+//     display: none;
+//     position: absolute;
+//     padding: 20px;
+//     background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+//     //right: 20px;
+//     top: 60px;
+//     left: 0;
+//     width: 60%;
+//     border-radius: 4px 0 4px 4px;
+
+
+//   }
+
+//   .menu li {
+//     text-align: left;
+//     width: 100%;
+//     padding: 10px 0;
+//     margin: 0;
+
+//   }
+
+//   .menu:hover ul {
+
+//     display: block;
+
+//   }
+// }
+
+// #dropdown {
+//   position: relative;
+//   display: inline-block;
+
+//   .fa-caret-down {
+//     font-size: 18px;
+//     padding-left: 10px;
+//   }
+
+// }
+
+// #dropdown-content {
+//   display: none;
+//   position: absolute;
+//   background-color: #f9f9f9;
+//   width: 100%;
+//   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+//   padding: 12px 16px;
+//   z-index: 1;
+
+// }
+
+// #dropdown:hover #dropdown-content {
+//   display: block;
+//   position: absolute;
+//   top: 20;
+//   left: 2px;
+
+// }
+
+// .menu__container {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+
+//   .icons {
+//     display: flex;
+//     justify-content: center;
+//   }
+
+//   i {
+//     font-size: 1.5em;
+//   }
+
+
+//   .logo__container {
+//     display: flex;
+//     justify-content: space-around;
+
+//     .logo__title {
+//       //display: none;
+//       font-size: 1em;
+//       color: #85270d;
+//       @media #{$desktop} {
+//         font-size: 1.5em;
+//         line-height: 78px;
+//         vertical-align: middle;
+//         margin-left: 5px;
+//       }
+//     }
+//   }
+
+//   .books__logo {
+//     width: 80px;
+//     height: auto;
+//     display: none;
+//     @media #{$desktop} {
+//       display: inline-block;
+//     }
+//   }
+// }
+
+// .introduction {
+//   height: 60%;
+//   display: flex;
+//   align-items: flex-end;
+
+//   .intro__box {
+//     height: 100%;
+//     width: 100%;
+//     background-image: url("/assets/images/books.webp");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+//     .intro__box__title {
+//       height: 30%;
+//       width: 66%;
+//       margin-left: 10px;
+//       text-align: center;
+
+//       h1 {
+//         size: 2em;
+//         color: darkslategray;
+//         padding-top: 10px;
+//       }
+
+//       p {
+//         padding-top: 10px;
+//         font-size: 1.5em;
+//         color: brown;
+//       }
+//     }
+//   }
+// }
+
+
+// .explore__button {
+//   border-radius: 20px;
+//   height: 2em;
+//   width: 8em;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-left: 10px;
+//   margin-bottom: 180px;
+//   background-color: $mainColor;
+
+//   @media #{$tablet} {
+//     margin-bottom: 150px;
+//   }
+//   @media #{$desktop} {
+//     margin-bottom: 120px;
+//   }
+// }
+
+// .explore__button a {
+//   color: white;
+//   font-size: 1.5em;
+//   text-decoration: none;
+// }
+
+// .explore__button a:hover {
+//   color: #85270d;
+// }
+
+
+// .category__box {
+//   height: 282px;
+//   margin-top: 25px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+
+
+//   @media #{$tablet} {
+//     height: 414px;
+//   }
+//   @media #{$desktop} {
+//     height: 414px;
+//   }
+
+//   .bs__images {
+//     width: 50%;
+//     height: 64%;
+//     margin: 0 auto;
+//     padding: 10px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     .bs__first__img {
+//       height: 50%;
+//       width: 100%;
+//       display: flex;
+//       justify-content: space-around;
+//     }
+
+//     .bs__second__img {
+//       height: 50%;
+//       width: 100%;
+//       display: flex;
+//       justify-content: space-evenly;
+//     }
+
+//     img {
+//       height: 96%;
+//       width: auto;
+//     }
+//   }
+
+//   .bs__text {
+//     width: 90%;
+//     height: 50%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     padding: 10px;
+//     text-align: center;
+//     background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+//     color: white;
+//     margin: 0 auto;
+
+//     a {
+//       text-decoration: none;
+//       color: firebrick;
+//       font-size: 2em;
+//     }
+
+//     .bs__subtitle {
+//       font-size: 1.5em;
+//       color: firebrick;
+//     }
+//   }
+
+//   .bs__text a:hover {
+//     color: #668a60;
+//   }
+// }
+
+
+// .bs__text div:first-child {
+//   height: 50%;
+// }
+
+// .bs__text div:last-child {
+//   height: 50%;
+// }
+
+// .children__box {
+//   background-image: url("/assets/images/children_books.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+
+//   div:first-child {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     text-align: center;
+//     margin-top: 20px;
+
+//     a {
+//       font-size: 1.5em;
+//       text-decoration: none;
+//       //color: $mainColor;
+//       color: #668a60
+//     }
+
+
+//     @media #{$tablet} {
+//       margin-top: 36px;
+//       font-size: 1.5em;
+//     }
+//     @media #{$desktop} {
+//       margin-top: 36px;
+//       font-size: 1.5em;
+//     }
+//   }
+// }
+
+// .children__box div:first-child a:hover {
+//   color: #85270d;
+// }
+
+// .advertise {
+//   width: 100%;
+//   background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+//   margin-bottom: 30px;
+//   @media #{$tablet} {
+//     display: flex;
+//     justify-content: space-around;
+//   }
+//   @media #{$desktop} {
+//     display: flex;
+//     justify-content: space-around;
+//   }
+
+//   .category__advertise {
+//     width: 100%;
+
+//     @media #{$tablet} {
+//       width: 40%;
+//     }
+//     @media #{$desktop} {
+//       width: 40%;
+//     }
+//   }
+
+//   .category__advertise:hover {
+//     -webkit-box-shadow: 6px 7px 31px -13px rgba(0, 0, 0, 0.75);
+//   }
+// }
+
+// .main {
+//   width: 100%;
+// }
+
+// .category {
+//   width: 100%;
+//   margin: 0 auto;
+
+//   .category__container {
+//     width: 100%;
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0 auto;
+//     background-color: white;
+//   }
+// }
+
+// .category__title {
+//   text-align: center;
+//   margin: 10px auto 10px auto;
+//   font-size: 1em;
+//   background-color: #ddd;
+//   color: $mainColor;
+// }
+
+
+// .book__list {
+//   margin: 0 auto;
+//   background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+// }
+
+// .book__container {
+//   width: 90%;
+//   height: 24vh;
+//   display: flex;
+//   justify-content: space-around;
+//   margin: 20px;
+//   -webkit-box-shadow: 6px 7px 31px -13px rgba(0, 0, 0, 0.75);
+//   background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+//   @media #{$tablet} {
+//     width: 45%;
+//   }
+//   @media #{$desktop} {
+//     width: 45%;
+//   }
+
+//   .book__cover {
+//     width: 30%;
+//     height: 94%;
+//     display: flex;
+//     margin: auto;
+//   }
+
+//   img {
+//     display: block;
+//     margin: auto;
+//     width: auto;
+//     height: 86%;
+//   }
+// }
+
+// .book__info {
+//   width: 64%;
+//   height: 100%;
+//   margin: 0 auto;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   .book__title {
+//     width: 100%;
+//     font-size: 1em;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     text-align: center;
+//     color: #73747a;
+
+//     h1 {
+//       white-space: nowrap;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//       padding-top: 10px;
+//       font-size: 1.5em;
+//     }
+//   }
+
+//   .book__title h1:hover {
+//     overflow: visible;
+//   }
+
+//   .book__title h3 {
+//     width: 100%;
+//     font-size: 1em;
+//     text-align: center;
+
+//   }
+
+//   .price {
+//     display: block;
+//     text-align: center;
+
+//     span {
+//       font-size: 1.5em;
+//       font-weight: bold;
+//       padding-top: 10px;
+//       color: #85270d;
+//     }
+//   }
+// }
+
+// .add__to__cart button {
+//   width: 120px;
+//   height: 39px;
+//   border-radius: 45px;
+//   text-decoration: none;
+//   font-size: 1em;
+//   color: #8f9094;
+//   //background-color: $mainColor;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+//   outline: none;
+// }
+
+// .add__to__cart button:hover {
+//   color: #85270d;
+// }
+
+// .search__page {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+//   .search__box {
+//     border: 1px solid $mainColor;
+//     border-radius: 25px;
+//     height: 30px;
+//     padding: 0 10px 0 10px;
+//     display: flex;
+//     justify-content: center;
+
+//     i {
+//       display: flex;
+//       align-items: center;
+
+//     }
+//   }
+
+//   .search__text {
+//     border: 0;
+//     font-size: 12px;
+//     height: 100%;
+
+//   }
+// }
+
+// .searched__book {
+//   display: block;
+//   width: 100px;
+//   height: 150px;
+
+// }
+
+
+// .books__list {
+//   width: 100%;
+//   display: flex;
+//   flex-wrap: wrap;
+//   background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+// }
+
+
+// .footer {
+//   height: 18vh;
+//   width: 100%;
+//   background-color: $mainColor;
+//   color: white;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+
+//   @media #{$tablet} {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+//   @media #{$desktop} {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+
+//   div {
+//     height: 40%;
+//     padding-top: 30px;
+//     text-align: center;
+//   }
+
+//   i:nth-child(1) {
+//     color: darkblue;
+//     width: 50px;
+//     height: auto;
+//   }
+
+//   i:nth-child(2) {
+//     color: deepskyblue;
+//     width: 50px;
+//     height: auto;
+//   }
+
+//   i:nth-child(3) {
+//     color: darkorange;
+//     width: 80px;
+//     height: auto;
+//   }
+// }
+
+
+// .cart {
+//   width: 80%;
+//   margin: 0 auto;
+//   color: #85270d;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
+//   -webkit-box-shadow: 6px 7px 31px -13px rgba(0, 0, 0, 0.75);
+//   background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+
+//   .cart__container {
+//     width: 100%;
+
+//     h1 {
+//       margin-top: 33px;
+//     }
+
+//     @media #{$tablet} {
+//       width: 45%;
+//     }
+//     @media #{$desktop} {
+//       width: 45%;
+//     }
+
+//     .cartItem__container {
+//       width: 90%;
+//       height: 24vh;
+//       display: flex;
+//       justify-content: space-around;
+//       margin: 20px;
+//       border-bottom: 1px solid black;
+
+//       .cartItem__cover {
+//         width: 30%;
+//         height: 94%;
+//         display: flex;
+//         margin: auto;
+//       }
+
+//       img {
+//         display: block;
+//         margin: auto;
+//         width: auto;
+//         height: 77%;
+//       }
+//     }
+
+//     .cartItem__info {
+//       width: 64%;
+//       height: 100%;
+//       margin: 0 auto;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       align-items: center;
+
+//       .cartItem__title {
+//         width: 100%;
+//         font-size: 0.7em;
+//         white-space: nowrap;
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//         text-align: center;
+//         color: #73747a;
+
+//         h1:hover {
+//           overflow: visible;
+//         }
+//       }
+
+//       .cartItem__price {
+//         display: block;
+//         text-align: center;
+
+//         span {
+//           font-size: 1.5em;
+//           font-weight: bold;
+//           padding-top: 10px;
+//           color: #85270d;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .contact__page {
+//   width: 100%;
+//   margin: 0 auto;
+//   display: flex;
+//   justify-content: center;
+//   background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+//   padding: 30px;
+
+//   .contact {
+//     width: 100%;
+//     font-size: 1.5em;
+//     color: #85270d;
+//     display: flex;
+//     justify-content: center;
+//     -webkit-box-shadow: 6px 7px 31px -13px rgba(0, 0, 0, 0.75);
+//     background-image: url("/assets/images/paper_fibers/paper_fibers.png");
+//     @media #{$tablet} {
+//       width: 80%;
+//     }
+//     @media #{$desktop} {
+//       width: 60%;
+//     }
+
+//     h1 {
+//       font-size: 1.5em;
+//       text-align: center;
+
+//     }
+
+//   }
+
+//   .form {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     justify-content: center;
+//     margin: 10px 0 10px 0;
+
+//   }
+
+//   input {
+//     width: 220px;
+//     height: 30px;
+//   }
+
+//   textarea {
+//     width: 220px;
+//   }
+
+//   .form-control {
+//     border: 1px solid $mainColor
+//   }
+
+//   .btn {
+//     color: #85270d;
+//     height: 28px;
+//     width: 158px;
+//     border-radius: 45px;
+//     text-decoration: none;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//     outline: none;
+//     margin-left: 34px;
+//   }
+
+//   .btn:hover {
+//     color: gray;
+//   }
+// }
+
+// .no__items__cart {
+//   border: 1px solid red;
+//   border-radius: 45%;
+//   height: 20px;
+//   width: 20px;
+//   background-color: red;
+//   color: white;
+//   position: absolute;
+//   top: 126px;
+//   right: 65px;
+//   text-align: center;
+// }
+
+// .total {
+//   color: white;
+//   font-size: 2em;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   width: 90%;
+//   height: 24vh;
+//   margin: 20px;
+//   background-color: #668a60;
+
+//   table {
+//     width: 70%;
+
+//     tbody {
+//       font-size: 1em;
+//       color: white;
+//       align-content: center;
+//       text-align: left;
+
+//       td {
+//         padding-right: 10px;
+//       }
+
+//       th {
+//         border-top: 2px solid white;
+//         font-weight: bold;
+//         padding-top: 10px;
+//       }
+//     }
+//   }
+
+//   button {
+//     color: #85270d;
+//     height: 28px;
+//     width: 158px;
+//     border-radius: 45px;
+//     text-decoration: none;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//     outline: none;
+//   }
+
+//   button:hover {
+//     color: gray;
+//   }
+// }

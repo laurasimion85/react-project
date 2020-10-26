@@ -1,9 +1,20 @@
  
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-// import serviceWorker from './serviceWorker';
-import './index.css';
+import {NavLink} from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-// serviceWorker.unregister();
+import Main from './App';
+import './App.scss';
+// // import serviceWorker from './serviceWorker';
+// import './index.css';
+
+// ReactDOM.render(<App />, document.getElementById('root'));
+// // serviceWorker.unregister();
+
+
+
+
+ReactDOM.render(
+    <Main/>,
+    document.getElementById('root')
+);
