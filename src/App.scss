@@ -1,27 +1,4 @@
-/* .App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: green;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
 
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
@@ -45,7 +22,6 @@ html {
 
 header {
   height: 13vh;
-
 
 }
 
@@ -142,7 +118,7 @@ li {
     display: inline-block;
   }
 
-  .menu ul, .menu:active ul {
+.menu ul, .menu:active ul {
     display: none;
     position: absolute;
     padding: 20px;
@@ -153,21 +129,19 @@ li {
     width: 60%;
     border-radius: 4px 0 4px 4px;
 
+ }
 
-  }
-
-  .menu li {
+.menu li {
     text-align: left;
     width: 100%;
     padding: 10px 0;
     margin: 0;
 
-  }
+}
 
-  .menu:hover ul {
+.menu:hover ul {
 
     display: block;
-
   }
 }
 

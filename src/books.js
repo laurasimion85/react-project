@@ -14,7 +14,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/1.jpg",
+                image: "../public/assets/images/1.jpg",
                 price: "29.00"
             },
             {
@@ -45,7 +45,7 @@ module.exports = [
                     "Leo Wolf",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/3.jpg",
+                image: "./public/assets/images/3.jpg",
                 price: "24.99"
             },
             {
@@ -60,7 +60,7 @@ module.exports = [
                     "John Doe",
                     "Maria Smith"
                 ],
-                image: "public/assets/images/4.jpg",
+                image: "/public/assets/images/4.jpg",
                 price: "25.99"
             },
             {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {NavLink, Route, HashRouter, Switch} from 'react-router-dom';
-import testitems from "./Database/books";
-import testItems from "./Database/books";
+import testitems from "./books";
+import testItems from "./books";
 // import logo from './logo.svg';
 import './App.scss';
 
@@ -228,8 +228,8 @@ class AdvertiseBestsellers extends Component {
                     <div className="bs__images">
                         <div className="bs__first__img">
                             <img src="/assets/images/24.jpg"/>
-                            <img src="public/assets/images/25.png"/>
-                            <img src="public/assets/images/26.jpg"/>
+                            <img src="/assets/images/25.png"/>
+                            <img src="/assets/images/26.jpg"/>
                         </div>
                         <div className="bs__second__img">
                             <img src="/assets/images/27.jpg"/>
@@ -514,7 +514,7 @@ class Menu extends Component {
         return (
             <header>
                 <section className={"navigation"}>
-                    <div className="Menu__container">
+                    <div className="menu__container">
                         <div className="menu">
                             <a href="#" className="menu-icon">
                                 <i className="fa fa-bars"> </i>
