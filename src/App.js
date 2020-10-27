@@ -3,6 +3,7 @@ import {NavLink, Route, HashRouter, Switch} from 'react-router-dom';
 import testitems from "./books";
 import testItems from "./books";
 import './App.scss';
+// import children from 'images/children_books.jpg';
 
 
 
@@ -13,7 +14,8 @@ class BookCard extends Component {
 
     render() {
         return (
-            <div className={"books__list"}>
+            <div className={"books__list"} style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png")`
+        }}>
                 {this.props.items.map(item => (
                     <Item key={item.id} item={item} onAddToCart={() => this.props.onAddToCart(item)}/>
                 ))}
@@ -207,19 +209,21 @@ class AdvertiseBestsellers extends Component {
     render() {
         return (
             <section className="category__advertise">
-                <div className="category__box">
+                <div className="category__box" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png")`
+  }}>
                     <div className="bs__images">
                         <div className="bs__first__img">
-                            <img src="/assets/images/24.jpg" alt="book cover"/>
-                            <img src="/assets/images/25.png" alt="book cover"/>
-                            <img src="/assets/images/26.jpg" alt="book cover"/>
+                            <img src={`${process.env.PUBLIC_URL}/images/24.jpg`} alt="book cover"/>
+                            <img src={`${process.env.PUBLIC_URL}/images/25.png`} alt="book cover"/>
+                            <img src={`${process.env.PUBLIC_URL}/images/26.jpg`} alt="book cover"/>
                         </div>
                         <div className="bs__second__img">
-                            <img src="/assets/images/27.jpg" alt="book cover"/>
-                            <img src="/assets/images/28.jpeg" alt="book cover"/>
+                            <img src={`${process.env.PUBLIC_URL}/images/27.jpg`} alt="book cover"/>
+                            <img src={`${process.env.PUBLIC_URL}/images/28.jpeg`} alt="book cover"/>
                         </div>
                     </div>
-                    <div className="bs__text">
+                    <div className="bs__text" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`
+  }}>
                         <div>
                             <h1>
                                 <a href="#bestsellers">BESTSELLERS</a>
@@ -237,7 +241,8 @@ class AdvertiseChildrenBooks extends Component {
     render() {
         return (
             <section className="category__advertise">
-                <div className="category__box children__box">
+                <div className="category__box children__box" style={{background: `url('${process.env.PUBLIC_URL}/images/children_books.jpg')`
+  }}>
                     <div>
                         <h1>
                             <a href="#children">CHILDREN'S BOOKS</a></h1>
@@ -419,7 +424,8 @@ class Contact extends Component {
 
     render() {
         return(
-            <div className="contact">
+            <div className="contact" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`
+        }}>
                 <form onSubmit={this.handleSubmit.bind(this)} method="POST">
                     <h1>Contact us</h1>
                     <div className="form">
@@ -476,9 +482,10 @@ class Introduction extends Component {
     render() {
         return (
             <section className={"introduction"}>
-                <div className="intro__box">
-                    <div className="intro__box__title">
-                        <h1>Explore new adventures without leaving the house</h1>
+                <div className="intro__box" style={{background: `url('${process.env.PUBLIC_URL}/images/books.webp')`,backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat' }}>
+                    <div className="intro__box__title"> 
+                    <h1>Explore new adventures without leaving the house</h1>
                         <p>Page-turners, plot twists and more</p>
                     </div>
                     <div className="explore__button">
@@ -497,12 +504,12 @@ class Menu extends Component {
         return (
             <header>
                 <section className={"navigation"}>
-                    <div className="menu__container">
-                        <div className="menu">
+                    <div className="menu__container" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`}}>
+                        <div className="menu" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`}}>
                             <a href="#" className="menu-icon">
                                 <i className="fa fa-bars"> </i>
                             </a>
-                            <ul>
+                            <ul style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`}}>
                                 <li><NavLink to="/">Home</NavLink></li>
                                 <li>
                                     <div id="dropdown" to="/bookslist">Books Categories<i
@@ -522,7 +529,7 @@ class Menu extends Component {
                             </ul>
                         </div>
                         <div className="logo__container">
-                            <img className="books__logo" src="/assets/images/books_logo.png" alt={"books logo"}/>
+                            <img className="books__logo" src={`${process.env.PUBLIC_URL}/images/books_logo.png`} alt={"books logo"}/>
                             <div className="logo__title">
                                 <h1>ONLINE BOOKSTORE</h1>
                             </div>
@@ -582,7 +589,8 @@ class Search extends Component {
                             return (
                                 // <BookCard items={books} onAddToCart={this.onAddToCart}/>
                                 //
-                                <div key={id} className="book__container">
+                                <div key={id} className="book__container" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`
+                            }}>
                                     <div className="book__cover">
                                         <img src={process.env.PUBLIC_URL + image} alt="book cover"/>
                                     </div>
@@ -643,11 +651,13 @@ class Main extends Component {
                                 <Menu/>
 
                                 <main>
-                                    <div className="cart">
+                                    <div className="cart" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png")`
+  }}>
                                         <Route exact path='/cart'
                                                render={(props) => <CartPage {...props} CartItems={this.state.cart}/>}/>
                                     </div>
-                                    <div className="contact__page">
+                                    <div className="contact__page" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`
+  }}>
                                         <Route path='/contact' exact component={Contact}/>
                                     </div>
                                     <div className="search__page">
@@ -655,7 +665,8 @@ class Main extends Component {
                                                render={(props) => <Search {...props} onAddToCart={this.onAddToCart}/>}/>
                                     </div>
 
-                                    <div className="books__list">
+                                    <div className="books__list" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`
+  }}>
 
                                         <Route path='/bestsellers'
                                                render={(props) => <BestsellerBooks {...props} items={testItems}
@@ -681,16 +692,19 @@ class Main extends Component {
 
                                     </div>
                                     <Introduction/>
-                                    <div className="books__list">
+                                    <div className="books__list" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`
+  }}>
                                         <Route exact path='/bookslist'
                                                render={(props) => <BookCard {...props} items={testItems}
                                                                             onAddToCart={this.onAddToCart}/>}/>
                                     </div>
-                                    <section className="advertise">
+                                    <section className="advertise" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`
+  }}>
                                         <AdvertiseBestsellers/>
                                         <AdvertiseChildrenBooks/>
                                     </section>
-                                    <div className="books__list">
+                                    <div className="books__list" style={{background: `url('${process.env.PUBLIC_URL}/images/paper_fibers/paper_fibers.png')`
+  }}>
                                         <BookCard items={testItems} onAddToCart={this.onAddToCart}/>
                                     </div>
 
