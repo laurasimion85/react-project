@@ -74,14 +74,14 @@ a:hover {
   border-top: 10px solid $mainColor;
   border-bottom: 4px solid $mainColor;
   z-index: 100;
-  background: url("/images/paper_fibers/paper_fibers.png");
+  background-image: url("/public/images/paper_fibers/paper_fibers.png");
   font-weight: bold;
 }
 
 .menu {
   //float: right;
   padding: 20px;
-  background-image: url("/images/paper_fibers/paper_fibers.png");
+  background-image: url("/public/images/paper_fibers/paper_fibers.png");
   color: $mainColor;
   font-size: 1.5em;
 
@@ -122,7 +122,7 @@ li {
     display: none;
     position: absolute;
     padding: 20px;
-    background-image: url("/images/paper_fibers/paper_fibers.png");
+    background-image: url("/public/images/paper_fibers/paper_fibers.png");
     //right: 20px;
     top: 60px;
     left: 0;
@@ -292,7 +292,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-image: url("/images/paper_fibers/paper_fibers.png");
+  background-image: url("/public/images/paper_fibers/paper_fibers.png");
 
 
   @media #{$tablet} {
@@ -340,7 +340,7 @@ li {
     justify-content: center;
     padding: 10px;
     text-align: center;
-    background-image: url("/images/paper_fibers/paper_fibers.png");
+    background-image: url("/public/images/paper_fibers/paper_fibers.png");
     color: white;
     margin: 0 auto;
 
@@ -371,7 +371,7 @@ li {
 }
 
 .children__box {
-  background-image: url("/images/children_books.jpg");
+  background-image: url("/public/images/children_books.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -410,7 +410,7 @@ li {
 
 .advertise {
   width: 100%;
-  background-image: url("/images/paper_fibers/paper_fibers.png");
+  background-image: url("/public//images/paper_fibers/paper_fibers.png");
   margin-bottom: 30px;
   @media #{$tablet} {
     display: flex;
@@ -465,7 +465,7 @@ li {
 
 .book__list {
   margin: 0 auto;
-  background-image: url("/images/paper_fibers/paper_fibers.png");
+  background-image: url("/public/images/paper_fibers/paper_fibers.png");
 }
 
 .book__container {
@@ -475,7 +475,7 @@ li {
   justify-content: space-around;
   margin: 20px;
   -webkit-box-shadow: 6px 7px 31px -13px rgba(0, 0, 0, 0.75);
-  background-image: url("/images/paper_fibers/paper_fibers.png");
+  background-image: url("/public//images/paper_fibers/paper_fibers.png");
   @media #{$tablet} {
     width: 45%;
   }
@@ -606,7 +606,7 @@ li {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-image: url("/images/paper_fibers/paper_fibers.png");
+  background-image: url("/public/images/paper_fibers/paper_fibers.png");
 }
 
 
@@ -668,7 +668,7 @@ li {
   justify-content: center;
   text-align: center;
   -webkit-box-shadow: 6px 7px 31px -13px rgba(0, 0, 0, 0.75);
-  background-image: url("/images/paper_fibers/paper_fibers.png");
+  background-image: url("/public/images/paper_fibers/paper_fibers.png");
 
   .cart__container {
     width: 100%;
@@ -750,7 +750,7 @@ li {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  background-image: url("/images/paper_fibers/paper_fibers.png");
+  background-image: url("/public/images/paper_fibers/paper_fibers.png");
   padding: 30px;
 
   .contact {
@@ -760,7 +760,7 @@ li {
     display: flex;
     justify-content: center;
     -webkit-box-shadow: 6px 7px 31px -13px rgba(0, 0, 0, 0.75);
-    background-image: url("/images/paper_fibers/paper_fibers.png");
+    background-image: url("/public/images/paper_fibers/paper_fibers.png");
     @media #{$tablet} {
       width: 80%;
     }
