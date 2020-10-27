@@ -2,31 +2,14 @@ import React, { Component } from 'react';
 import {NavLink, Route, HashRouter, Switch} from 'react-router-dom';
 import testitems from "./books";
 import testItems from "./books";
-// import logo from './logo.svg';
 import './App.scss';
 
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <div className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <h2>Welcome to my first React project</h2>
-//         </div>
-//         <p className="App-intro">
-//           To get started, edit <code>src/App.js</code> and save to reload.
-//         </p>
-//       </div>
-//     );
-//   }
-// }
 
-// export default App;
 
 class BookCard extends Component {
-    constructor(props) {
-        super(props)
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
 
     render() {
         return (
@@ -46,15 +29,15 @@ class BookCard extends Component {
 
 
 class Item extends React.Component{
-    constructor(props){
-        super(props)
-    }
+    // constructor(props){
+    //     super(props)
+    // }
 
     render(){
         return(
             <div className="book__container">
                 <div className="book__cover">
-                    <img src={this.props.item.image}/>
+                    <img src={process.env.PUBLIC_URL + this.props.item.image} alt="book cover"/>
                 </div>
 
                 <div className="book__info">
@@ -187,16 +170,16 @@ class CartPage extends Component {
 
 class CartItem extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
 
     render() {
         return (
             <>
                 <div className="cartItem__container">
                     <div className="cartItem__cover">
-                        <img src={this.props.item.image}/>
+                        <img src={process.env.PUBLIC_URL + this.props.item.image} alt="book cover"/>
                     </div>
 
                     <div className="cartItem__info">
@@ -227,13 +210,13 @@ class AdvertiseBestsellers extends Component {
                 <div className="category__box">
                     <div className="bs__images">
                         <div className="bs__first__img">
-                            <img src="/assets/images/24.jpg"/>
-                            <img src="/assets/images/25.png"/>
-                            <img src="/assets/images/26.jpg"/>
+                            <img src="/assets/images/24.jpg" alt="book cover"/>
+                            <img src="/assets/images/25.png" alt="book cover"/>
+                            <img src="/assets/images/26.jpg" alt="book cover"/>
                         </div>
                         <div className="bs__second__img">
-                            <img src="/assets/images/27.jpg"/>
-                            <img src="/assets/images/28.jpeg"/>
+                            <img src="/assets/images/27.jpg" alt="book cover"/>
+                            <img src="/assets/images/28.jpeg" alt="book cover"/>
                         </div>
                     </div>
                     <div className="bs__text">
@@ -266,9 +249,9 @@ class AdvertiseChildrenBooks extends Component {
 }
 
 class BusinessBooks extends Component {
-    constructor(props) {
-        super(props)
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
 
     render() {
         return (
@@ -282,7 +265,7 @@ class BusinessBooks extends Component {
                         if (item.category === "business") {
                             return (
                                 <Item key={item.id} item={item} onAddToCart={() => this.props.onAddToCart(item)}/>
-                            )
+                    )
                         }
                     })}
                 </div>
@@ -601,7 +584,7 @@ class Search extends Component {
                                 //
                                 <div key={id} className="book__container">
                                     <div className="book__cover">
-                                        <img src={image}/>
+                                        <img src={process.env.PUBLIC_URL + image} alt="book cover"/>
                                     </div>
 
                                     <div className="book__info">

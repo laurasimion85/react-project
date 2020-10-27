@@ -14,7 +14,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "../public/assets/images/1.jpg",
+                image: "/images/1.jpg",
                 price: "29.00"
             },
             {
@@ -29,7 +29,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/2.jpeg",
+                image: "/images/2.jpeg",
                 price: "21.85"
             },
             {
@@ -45,7 +45,7 @@ module.exports = [
                     "Leo Wolf",
                     "Peter Brown"
                 ],
-                image: "./public/assets/images/3.jpg",
+                image: "/images/3.jpg",
                 price: "24.99"
             },
             {
@@ -60,7 +60,7 @@ module.exports = [
                     "John Doe",
                     "Maria Smith"
                 ],
-                image: "/public/assets/images/4.jpg",
+                image: "/images/4.jpg",
                 price: "25.99"
             },
             {
@@ -77,7 +77,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/5.jpeg",
+                image: "/images/5.jpeg",
                 price: "17.99"
             },
             {
@@ -88,7 +88,7 @@ module.exports = [
                 rate: "3.9",
                 voters: "1,930",
                 people: [],
-                image: "public/assets/images/6.jpg",
+                image: "/images/6.jpg",
                 price: "29.99"
             },
 
@@ -104,7 +104,7 @@ module.exports = [
                     "Leo Wolf",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/7.jpeg",
+                image: "/images/7.jpeg",
                 price: "20.99"
             },
             {
@@ -118,7 +118,7 @@ module.exports = [
                     "Carolina Peters",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/8.jpg",
+                image: "/images/8.jpg",
                 price: "19.99"
             },
             {
@@ -131,7 +131,7 @@ module.exports = [
                 people: [
                     "Peter Brown"
                 ],
-                image: "public/assets/images/9.jpg",
+                image: "/images/9.jpg",
                 price: "14.75"
             },
             {
@@ -147,7 +147,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/10.jpg",
+                image: "/images/10.jpg",
                 price: "22.59"
             },
 
@@ -162,7 +162,7 @@ module.exports = [
                     "Carolina Peters",
                     "Samantha William"
                 ],
-                image: "public/assets/images/11.jpg",
+                image: "/images/11.jpg",
                 price: "21.45"
             },
             {
@@ -180,7 +180,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/12.jpg",
+                image: "/images/12.jpg",
                 price: "11.99"
             },
             {
@@ -197,7 +197,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/13.jpg",
+                image: "/images/13.jpg",
                 price: "16.99"
             },
 
@@ -212,7 +212,7 @@ module.exports = [
                     "Carolina Peters",
                     "Samantha William"
                 ],
-                image: "public/assets/images/14.jpg",
+                image: "/images/14.jpg",
                 price: "8.99"
             },
             {
@@ -225,7 +225,7 @@ module.exports = [
                 people: [
                     "Peter Brown"
                 ],
-                image: "public/assets/images/15.jpg",
+                image: "/images/15.jpg",
                 price: "9.59"
             },
 
@@ -241,7 +241,7 @@ module.exports = [
                     "Maria Smith",
                     "Leo Wolf"
                 ],
-                image: "public/assets/images/16.jpg",
+                image: "/images/16.jpg",
                 price: "7.99"
             },
             {
@@ -252,7 +252,7 @@ module.exports = [
                 rate: "3.7",
                 voters: "8",
                 people: [],
-                image: "public/assets/images/17.jpg",
+                image: "/images/17.jpg",
                 price: "12.59"
             },
             {
@@ -265,7 +265,7 @@ module.exports = [
                 people: [
                     "Carolina Peters"
                 ],
-                image: "public/assets/images/18.jpg",
+                image: "/images/18.jpg",
                 price: "17.59"
             },
             {
@@ -278,7 +278,7 @@ module.exports = [
                 people: [
                     "John Doe"
                 ],
-                image: "public/assets/images/19.jpg",
+                image: "/images/19.jpg",
                 price: "17.49"
             },
 
@@ -294,7 +294,7 @@ module.exports = [
                     "Maria Smith",
                     "Leo Wolf"
                 ],
-                image: "public/assets/images/20.jpg",
+                image: "/images/20.jpg",
                 price: "7.99"
             },
             {
@@ -310,7 +310,7 @@ module.exports = [
                     "Carolina Peters",
                     "Samantha William"
                 ],
-                image: "public/assets/images/21.jpeg",
+                image: "/images/21.jpeg",
                 price: "5.99"
             },
             {
@@ -324,7 +324,7 @@ module.exports = [
                     "Carolina Peters",
                     "Samantha William"
                 ],
-                image: "public/assets/images/22.jpeg",
+                image: "/images/22.jpeg",
                 price: "4.99"
             },
             {
@@ -340,7 +340,7 @@ module.exports = [
                     "John Doe",
                     "Maria Smith"
                 ],
-                image: "public/assets/images/23.jpg",
+                image: "/images/23.jpg",
                 price: "7.99"
             },
 
@@ -359,7 +359,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/24.jpg",
+                image: "/images/24.jpg",
                 price: "21.00"
             },
             {
@@ -374,7 +374,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/25.png",
+                image: "/images/25.png",
                 price: "17.90"
             },
             {
@@ -390,7 +390,7 @@ module.exports = [
                     "Peter Brown",
                     "Leo Wolf"
                 ],
-                image: "public/assets/images/26.jpg",
+                image: "/images/26.jpg",
                 price: "9.99"
             },
             {
@@ -404,7 +404,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/27.jpg",
+                image: "/images/27.jpg",
                 price: "21.00"
             },
             {
@@ -419,7 +419,7 @@ module.exports = [
                     "Samantha William",
                     "Peter Brown"
                 ],
-                image: "public/assets/images/28.jpeg",
+                image: "/images/28.jpeg",
                 price: "7.00"
             }
 
