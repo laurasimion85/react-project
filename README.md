@@ -7,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![screenshot](/screenshot.png)
 
+![responsive layout](/responsive.png)
+
+![shopping cart](/cart.png)
+
 Installation
 
 ## Available Scripts
