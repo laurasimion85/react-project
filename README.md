@@ -1,10 +1,11 @@
-ONLINE BOOKSTORE
+# ONLINE BOOKSTORE
 
 It is a website with a shopping cart and search functionality.
 Responsive layout for small, medium and large devices.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![screenshot](/screenshot.png)
 
 Installation
 
